@@ -1,0 +1,142 @@
+<html>
+<head>
+    <Title>Javascript</Title>
+
+    <Style type="text/CSS">
+    
+    #red {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border-radius: 50%;
+    float: left;
+    margin-right: 50px;
+
+
+    }
+    #yellow {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    border-radius: 50%;
+    float: left;
+    margin-right: 50px;
+
+
+    }
+    #blue {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    border-radius: 50%;
+    float: left;
+    margin-right: 50px;
+
+
+    }
+    
+    
+    </Style>
+
+</head>
+
+<body>
+
+    <p id="text">Hello World!</p>
+
+    <button id="myButton">Change text</button>
+
+    <p id="second-paragraph">Javascript is ... </p>
+
+    <button id="secondButton">Append text</button>
+
+    <p id="no-text">&nbsp;</p>
+    <button id="Create-Text">Create Text!</button>
+    <p id="text2">Hello World!</p>
+    <button id="changeText">Click to change text!</button>
+    <p id="moreText">This is some text</p>
+    <button id="styleText">Style Text</button>
+
+    <p id="changeText3">This is a paragraph</p>
+
+   <p id="red"></p>
+   <p id="blue"></p>
+
+   <p id="yellow"></p>
+
+   <input type="text" id="textInput">
+
+   <button id="textChanger">Change the text!</button>
+   <p>This is some text!</p>
+
+   
+   
+
+    <script type="text/javascript">
+
+        document.getElementById('myButton').onclick = function() {
+
+            document.getElementById('text').innerHTML = 'Hello Motherfuckers!';
+        
+        };
+        document.getElementById('secondButton').onclick = function() {
+
+        document.getElementById('second-paragraph').innerHTML = 'I think ' + document.getElementById('second-paragraph').innerHTML + 'awesome!' ;
+
+};
+        document.getElementById('Create-Text').onclick = function() {
+
+        document.getElementById('no-text').innerHTML = ' Hello Motherfuckers!';
+
+};
+document.getElementById('changeText').onclick = function() {
+
+document.getElementById('text2').innerHTML = 'This Is Javascript!';
+
+};
+document.getElementById('styleText').onclick = function() {
+    document.getElementById('moreText').style.display = 'none';
+
+
+};
+document.getElementById('changeText3').style.fontSize = '50px';
+
+document.getElementById('red').onclick = function() {
+    document.getElementById('red').style.display = 'none';
+
+}
+document.getElementById('blue').onclick = function() {
+    document.getElementById('blue').style.display = 'none';
+
+}
+document.getElementById('yellow').onclick = function() {
+    document.getElementById('yellow').style.display = 'none';
+
+}
+
+document.getElementById('textChanger').onclick = function() {
+    var textEntered = '';
+
+    textEntered = document.getElementById('textInput').value;
+    alert(textEntered);
+
+
+}
+
+
+
+
+
+    
+
+      
+
+
+    
+
+    
+    </script>
+    
+</body>
+
+</html>
