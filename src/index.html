@@ -36,11 +36,20 @@
 
     }
     #magic {
-        margin: 0 20px 0 10px;
+        margin: 0px 20px 0 10px;
         padding-top: 200px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-weight: bolder;
         color: blueviolet;
+
+
+    }
+    #game {
+        margin: 0px 50px 0 10px;
+        padding-top: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bolder;
+        color: #F1641E;
 
 
     }
@@ -78,10 +87,19 @@
    <button id="textChanger">Change the text!</button>
    <p id="texttoChange">This is some text!</p>
 
-   <div id="magic">
+<div id="magic">
    <p>What is the magic word?</p>
    <p><input type="text" id="magicWord"></p>
    <p><button id="checkMagicWord">Enter</button></p>
+
+</div>
+
+<div id="game">
+    <p>How many fingers am I holding up?</p>
+<p><input type="text" id="randomNumber"></p>
+<p><button id="checkRandomNumber">Try It!</button></p>
+
+
 
 </div>
 
@@ -154,7 +172,7 @@ document.getElementById('textChanger').onclick = function() {
 document.getElementById('checkMagicWord').onclick = function() {
 
     var magicWordEntered = document.getElementById('magicWord').value;
-    var magicWord = 'abracadabra';
+    var magicWord = 'dora';
     if (magicWordEntered == magicWord) {
         alert('You got it!!');
     } else {
@@ -162,7 +180,17 @@ document.getElementById('checkMagicWord').onclick = function() {
 
     }
 }
+document.getElementById('checkRandomNumber').onclick = function() {
 
+var randomNumberEntered = document.getElementById("randomNumber").value;
+var randomNumber1 = Math.floor((Math.random()*5) + 1);
+if (randomNumberEntered == randomNumber1) {
+    alert('You got it!!');
+} else {
+    alert('Nope, try again!');
+
+}
+}
 
 
 
